@@ -1,40 +1,50 @@
 <template>
-    <VuePaystack :paystack-key="paystackKey" :firstname="firstname" :embed="false" :lastname="lastname" :email="email" :amount="amount"  :reference="reference" :callback="onSuccess" :close="onClose">
-      Button
-    </VuePaystack>
+  <ImageEditor
+    :paystack-key="paystackKey"
+    :firstname="firstname"
+    :embed="false"
+    :lastname="lastname"
+    :email="email"
+    :amount="amount"
+    :reference="reference"
+    :callback="onSuccess"
+    :close="onClose"
+  >
+    Button vue 3
+  </ImageEditor>
 </template>
 
 <script>
-import VuePaystack from "vue-paystack2"
+import ImageEditor from "universal-image-editor";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    VuePaystack
+    ImageEditor,
   },
-  data () {
-    return { 
-      paystackKey: 'pk_test_xxxxxxxxxxxxxxxxxxx',
-      email: 'test@example.com',
-      firstname: 'test',
-      lastname: 'test',
+  data() {
+    return {
+      paystackKey: "pk_test_xxxxxxxxxxxxxxxxxxx",
+      email: "test@example.com",
+      firstname: "test",
+      lastname: "test",
       amount: 1000,
-    }
+    };
   },
   computed: {
-    reference () {
-      return Math.random().toString(36).substring(2, 10)
-    }
+    reference() {
+      return Math.random().toString(36).substring(2, 10);
+    },
   },
   methods: {
-    onSuccess (e) {
-      console.log(e)
+    onSuccess(e) {
+      console.log(e);
     },
-    onClose (e) {
-      console.log(e)
-    }
-  }
-}
+    onClose(e) {
+      console.log(e);
+    },
+  },
+};
 </script>
 
 <style>

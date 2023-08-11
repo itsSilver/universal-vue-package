@@ -10,6 +10,7 @@
   "dependencies": {
     "@vue/composition-api": "^1.7.1",
     "core-js": "^3.6.5",
+    "universal-image-editor": "^0.0.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {

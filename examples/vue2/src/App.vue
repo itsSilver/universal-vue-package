@@ -1,5 +1,5 @@
 <template>
-  <VuePaystack
+  <ImageEditor
     :paystack-key="paystackKey"
     :firstname="firstname"
     :lastname="lastname"
@@ -10,17 +10,17 @@
     :close="onClose"
     :embed="false"
   >
-    Button vue 2
-  </VuePaystack>
+    Button vue 2 image editor
+  </ImageEditor>
 </template>
 
 <script>
-import VuePaystack from "vue-paystack2";
+import ImageEditor from "universal-image-editor";
 
 export default {
   name: "App",
   components: {
-    VuePaystack,
+    ImageEditor,
   },
   data() {
     return {
@@ -33,9 +33,7 @@ export default {
   },
   computed: {
     reference() {
-      return Math.random()
-        .toString(36)
-        .substring(2, 10);
+      return Math.random().toString(36).substring(2, 10);
     },
   },
   methods: {
