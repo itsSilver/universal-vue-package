@@ -1,25 +1,23 @@
 {
-  "name": "vue-paystack2",
-  "version": "0.0.9",
-  "repository": "https://github.com/ECJ222/vue-paystack2.git",
+  "name": "universal-image-editor",
+  "version": "0.0.1",
+  "repository": "https://github.com/itsSilver/universal-vue-package",
   "license": "MIT",
-  "author": "Enoch Chejieh <enochchejieh@gmail.com>",
+  "author": "Silver Turku <silverturku@gmail.com>",
   "keywords": [
     "vue",
     "composition-api",
-    "vue-demi",
-    "paystack",
-    "payment"
+    "vue-demi"
   ],
   "files": [
     "dist"
   ],
-  "main": "./dist/vue-paystack2.umd.js",
-  "module": "./dist/vue-paystack2.es.js",
+  "main": "./dist/image-editor.umd.js",
+  "module": "./dist/image-editor.es.js",
   "exports": {
     ".": {
-      "import": "./dist/vue-paystack2.es.js",
-      "require": "./dist/vue-paystack2.umd.js"
+      "import": "./dist/image-editor.es.js",
+      "require": "./dist/image-editor.umd.js"
     }
   },
   "scripts": {

@@ -1,3 +1,3 @@
-import VuePaystack from './paystack.vue'
+import ImageEditor from "./ImageEditor.vue";
 
-export default VuePaystack 
+export default ImageEditor;

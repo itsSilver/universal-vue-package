@@ -10,8 +10,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/main.ts"),
-      name: "Vue-Paystack2",
-      fileName: (format) => `vue-paystack2.${format}.js`,
+      name: "ImageEditor",
+      fileName: (format) => `image-editor.${format}.js`,
     },
     rollupOptions: {
       external: ["vue", "vue-demi"],
